@@ -43,7 +43,7 @@ export default function Home() {
               <span className="text-gradient-brand">I'm Mizan Modak</span>
             </h1>
             <p className="text-xl md:text-2xl text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto">
-            Bridging development and infrastructure to deliver smart, reliable, and future-ready tech solutions.
+              A tech enthusiast and IT student passionate about bridging development and infrastructure to deliver smart, reliable, and future-ready solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Link href="/projects">
@@ -62,41 +62,41 @@ export default function Home() {
       </section>
 
       {/* Core Principles Section */}
-      <section className="py-20 bg-white dark:bg-neutral-900">
+      <section className="py-20 bg-neutral-200 dark:bg-neutral-950">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-l-4 border-l-primary-500 hover:shadow-lg transition-shadow">
+            <Card className="border-l-4 border-l-primary-500 hover:shadow-lg transition-shadow bg-neutral-100/80 dark:bg-neutral-900/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="font-mono tracking-tight text-primary-700">Radical Innovation</CardTitle>
-                <CardDescription>Breaking conventional boundaries</CardDescription>
+                <CardTitle className="font-mono tracking-tight text-primary-800 dark:text-primary-300">Radical Innovation</CardTitle>
+                <CardDescription className="text-neutral-700 dark:text-neutral-400">Pushing boundaries</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-neutral-700 dark:text-neutral-300">
-                  Pushing the limits of what's possible through cutting-edge technology and creative problem-solving.
+                <p className="text-neutral-800 dark:text-neutral-300">
+                  Exploring new approaches to solve complex problems, combining development expertise with infrastructure knowledge to create unique solutions.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-secondary-500 hover:shadow-lg transition-shadow">
+            <Card className="border-l-4 border-l-secondary-500 hover:shadow-lg transition-shadow bg-neutral-100/80 dark:bg-neutral-900/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="font-mono tracking-tight text-secondary-700">Technical Excellence</CardTitle>
-                <CardDescription>Beyond the ordinary</CardDescription>
+                <CardTitle className="font-mono tracking-tight text-secondary-800 dark:text-secondary-300">Technical Excellence</CardTitle>
+                <CardDescription className="text-neutral-700 dark:text-neutral-400">Real-world expertise</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-neutral-700 dark:text-neutral-300">
-                  Combining technical expertise with innovative thinking to deliver exceptional solutions.
+                <p className="text-neutral-800 dark:text-neutral-300">
+                  From debugging complex systems to building scalable infrastructure, I've learned that the best solutions come from hands-on experience, not just theory.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-accent-500 hover:shadow-lg transition-shadow">
+            <Card className="border-l-4 border-l-accent-500 hover:shadow-lg transition-shadow bg-neutral-100/80 dark:bg-neutral-900/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="font-mono tracking-tight text-accent-700">Future-Focused</CardTitle>
-                <CardDescription>Building tomorrow's solutions</CardDescription>
+                <CardTitle className="font-mono tracking-tight text-accent-800 dark:text-accent-300">Future-Focused</CardTitle>
+                <CardDescription className="text-neutral-700 dark:text-neutral-400">Forward-thinking solutions</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-neutral-700 dark:text-neutral-300">
-                  Creating technology solutions that anticipate and shape the future of digital experiences.
+                <p className="text-neutral-800 dark:text-neutral-300">
+                  Staying ahead of technology trends while building robust systems that can evolve with future needs, from cloud infrastructure to cybersecurity.
                 </p>
               </CardContent>
             </Card>
