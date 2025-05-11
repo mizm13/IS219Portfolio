@@ -15,18 +15,18 @@ export default function Projects() {
     {
       title: "AI-Powered Chat Interface",
       description: "An innovative chat interface leveraging large language models to provide intelligent, context-aware responses.",
-      category: "AI Project",
-      technologies: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS"],
+      category: "AI Dev",
+      technologies: ["Node.js", "Gemini API", "Express.js", "CSS"],
       image: "/projects/ai-chat.jpg",
-      link: "/projects/ai-chat"
+      link: "https://chatbot-v2-mqit.onrender.com/"
     },
     {
-      title: "Personal Project",
-      description: "A showcase of my technical capabilities and innovative thinking through a unique personal project.",
-      category: "Personal Project",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      title: "Free to Play Games Database",
+      description: "A showcase of my technical capabilities and innovative thinking through a FreeToPlay Games Database",
+      category: "Web Dev",
+      technologies: ["React", "Express.js", "MongoDB", "React Bootstrap"],
       image: "/projects/personal.jpg",
-      link: "/projects/personal"
+      link: "https://freetoplay-games-site.onrender.com/"
     }
   ];
 

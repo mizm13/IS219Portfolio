@@ -1,8 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
+  const featuredProjects = [
+    {
+      title: "Interactive Data Visualization",
+      description: "Transforming complex data into intuitive experiences",
+      image: "/projects/data-viz.jpg",
+      link: "https://nj-housing-prices-data-visualization.onrender.com/"
+    },
+    {
+      title: "AI Chat Interface",
+      description: "Intelligent, context-aware interactions",
+      image: "/projects/ai-chat.jpg",
+      link: "/projects/ai-chat"
+    },
+    {
+      title: "Innovation Showcase",
+      description: "Pushing boundaries with creative solutions",
+      image: "/projects/personal.jpg",
+      link: "/projects/personal"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900">
       {/* Hero Section */}
@@ -94,39 +116,29 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-neutral-200 dark:bg-neutral-800 relative">
-                <div className="absolute inset-0 flex items-center justify-center text-neutral-500">
-                  Data Visualization
+            {featuredProjects.map((project, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="aspect-video bg-neutral-200 dark:bg-neutral-800 relative">
+                  {project.image && (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  )}
                 </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl">Interactive Data Viz</CardTitle>
-                <CardDescription>Transforming complex data into intuitive experiences</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-neutral-200 dark:bg-neutral-800 relative">
-                <div className="absolute inset-0 flex items-center justify-center text-neutral-500">
-                  AI Project
-                </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl">AI Chat Interface</CardTitle>
-                <CardDescription>Intelligent, context-aware interactions</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-neutral-200 dark:bg-neutral-800 relative">
-                <div className="absolute inset-0 flex items-center justify-center text-neutral-500">
-                  Personal Project
-                </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl">Innovation Showcase</CardTitle>
-                <CardDescription>Pushing boundaries with creative solutions</CardDescription>
-              </CardHeader>
-            </Card>
+                <CardHeader>
+                  <CardTitle className="text-xl text-neutral-900 dark:text-white">
+                    {project.title}
+                  </CardTitle>
+                  <CardDescription className="text-neutral-700 dark:text-neutral-300">
+                    {project.description}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
           <div className="text-center mt-12">
             <Link href="/projects">
