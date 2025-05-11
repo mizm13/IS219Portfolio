@@ -1,4 +1,4 @@
-# Mizan Modak's Portfolio
+# Mizan's Portfolio
 
 A modern, responsive portfolio website built with Next.js and Tailwind CSS, showcasing my work as an IT Specialist and Web Developer.
 
@@ -36,5 +36,5 @@ A modern, responsive portfolio website built with Next.js and Tailwind CSS, show
 
 ## License
 
-MIT License - feel free to use this template for your own portfolio!
+MIT License
  
